@@ -1,0 +1,350 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.post-container {
+  max-width: 4em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.post-container label {
+  text-align: left;
+  display: block;
+}
+
+.post-container input,
+.post-container textarea {
+  width: 15em;
+  padding: 1em, 1.4em;
+  margin: 0.4em, 0.4em;
+  border: 0.3em solid #b7beb8;
+  border-radius: 1em;
+  display: block;
+}
+
+.post-title-card {
+}
+.post-body-card {
+}
+.post-author-card {
+}
+
+.article-container {
+  padding: 1em;
+}
+
+.article-body-card {
+  background-color: orange;
+  border-radius: 4em;
+  height: auto;
+  margin: 0.4em;
+  text-align: left;
+}
+.article-card {
+  border: #668f80;
+  justify-items: center;
+  padding: 0.1em;
+}
+.article-img {
+  border-radius: 4em;
+  text-align: center;
+  width: 22em;
+}
+.article-card-img {
+  border-radius: 4em;
+  opacity: 55%;
+  text-align: center;
+  height: 17rem;
+}
+
+.article-title-card {
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 2em;
+  max-width: 20em;
+  padding: 1.7em;
+  position: relative;
+  transform: translate(0em, -10.5em);
+}
+
+a {
+  font-weight: 700;
+  color: black;
+  text-decoration: inherit;
+}
+a:hover {
+  color: black;
+}
+
+.background-container {
+  background-color: #f5efe7;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.6em;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  border-radius: 1em;
+  margin: 0.4em;
+  border: 0.1em solid #b7beb8;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  transition: border-color 0.25s;
+  pointer-events: auto;
+  z-index: 2;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.container-text {
+  text-align: center;
+}
+
+.cart-header {
+  margin-left: 0.2rem;
+  pointer-events: all;
+}
+
+.comment-card {
+  background-color: orange;
+  border-radius: 3.8em;
+  margin: 1.6em;
+  height: auto;
+}
+
+.dropbnt {
+  background-color: white;
+  padding: 1.6em;
+  border: none;
+}
+.dropbtn:hover .dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown-bar {
+  background-color: none;
+  position: fixed;
+  inset: 0;
+  height: 3em;
+  padding: 0.5em;
+}
+
+.dropdown {
+  background-color: white;
+  border: rgba(255, 255, 255, 0.87);
+  border-radius: 2rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(80%) translateY(100%);
+  display: flex;
+  flex-grow: 1em;
+  flex-wrap: wrap;
+  height: 2.6em;
+  max-width: 10em;
+  margin: 0.2em;
+  overflow: hidden;
+  padding: 0.2em;
+  position: relative;
+  transition-duration: 0.65s;
+  transition-property: height, max-width;
+  transition-timing-function: cubic-bezier(0.19, 1, 22, 1);
+  z-index: 1;
+}
+
+.dropdown-content {
+  display: flex;
+  background-color: #f1f1f1;
+  min-width: 0.2em;
+  box-shadow: 0px 8px 16px 0px rbg(0, 0, 0, 0.2);
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown-content a:hover {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.footer {
+  background-color: #b7beb8;
+  color: rgb(0, 0, 0);
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  top: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+h1 {
+  color: #000000;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.header {
+  background-color: #668f80;
+  display: flex;
+  height: 7.2em;
+  inset: 0.2em, 0.2em auto auto;
+}
+.header-inner {
+  padding: 0;
+}
+
+.homeArticleImage {
+  position: absolute;
+
+  border-radius: 8px;
+}
+.homepage-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 2em;
+}
+
+.rows {
+  justify-items: center;
+  position: flex;
+}
+
+.site-header_bar-right {
+  align-items: center;
+  display: flex;
+  inset: 0.2rem 0.2rem auto auto;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 2;
+}
+
+.small-button {
+  align-items: center;
+  background: hsla(0, 0%, 8%, 0.1);
+  border-radius: 4rem;
+  color: black;
+  display: flex;
+  padding: 0.1rem;
+  position: relative;
+  transition-duration: 0.65s;
+  transition-property: background-color, color;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.small-icon {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 2.9rem;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 2.9rem;
+  position: static;
+}
+
+.site-name-text {
+  transform: translateY(-80%) translateX(5%);
+  position: relative;
+  color: white;
+  font-size: 1.5em;
+}
+
+.sortby-bar {
+  background-color: none;
+  justify-items: right;
+  z-index: 1;
+  position: relative;
+  padding: 0.5em;
+}
+
+.sortby-btn {
+  background-color: none;
+  padding: 1.6em;
+  border: none;
+  z-index: 1;
+}
+
+.sortby-dropdown {
+  border: #c7c7c7;
+  border-radius: 4em;
+  box-sizing: border-box;
+  justify-content: center;
+  max-width: 10em;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition-duration: 0.65s;
+  transition-property: height, max-width;
+  transition-timing-function: cubic-bezier(0.19, 1, 22, 1);
+}
+
+.to-homepage-icon-container {
+  height: 7em;
+}
+
+.to-homepage-button {
+  transform: translateY(-11%);
+}
+.to-homepage-icon {
+  height: 4em;
+  background-color: white;
+  border-radius: 4em;
+  padding: 0.1em;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
