@@ -54,7 +54,6 @@ const Articles = ({ data }) => {
         <button onClick={handleSortDesc}>Z-a</button>
         <button onClick={handleMostRecent}>Most Recent</button>
         <button onClick={handleMostPopular}>Most Popular</button>
-
         <ArticleList articles={sortedData} />
       </section>
     </>
