@@ -12,7 +12,7 @@ const ArticleList = ({ articles }) => {
             alt={article.title}
           />
           <div className="article-title-card">
-            <div className="container-text">{article.title}</div>
+            <h3 className="container-text">{article.title}</h3>
           </div>
         </div>
       </Link>

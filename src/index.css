@@ -39,6 +39,11 @@
 .post-author-card {
 }
 
+.rows {
+  display: grid;
+grid-template-columns:  50% 50%;
+}
+
 .article-container {
   padding: 1em;
 }
@@ -54,28 +59,36 @@
   border: #668f80;
   justify-items: center;
   padding: 0.1em;
+  margin: 0.1em;
+  max-height: 27em;
 }
+
 .article-img {
   border-radius: 4em;
   text-align: center;
-  width: 22em;
 }
 .article-card-img {
   border-radius: 4em;
   opacity: 55%;
   text-align: center;
-  height: 17rem;
+  max-width: 100%;
+
 }
 
 .article-title-card {
   background-color: white;
   box-sizing: border-box;
   border-radius: 2em;
-  max-width: 20em;
   padding: 1.7em;
   position: relative;
-  transform: translate(0em, -10.5em);
+  transform: translateY(-165%);
 }
+
+.container-text {
+  text-align: center;
+font-size: 0.1em;
+}
+
 
 a {
   font-weight: 700;
@@ -119,10 +132,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-.container-text {
-  text-align: center;
 }
 
 .cart-header {
@@ -232,11 +241,6 @@ h1 {
   align-items: center;
   text-decoration: none;
   padding: 2em;
-}
-
-.rows {
-  justify-items: center;
-  position: flex;
 }
 
 .site-header_bar-right {
