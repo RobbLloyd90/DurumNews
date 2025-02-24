@@ -41,7 +41,7 @@
 
 .rows {
   display: grid;
-grid-template-columns:  50% 50%;
+  grid-template-columns: 50% 50%;
 }
 
 .article-container {
@@ -60,35 +60,39 @@ grid-template-columns:  50% 50%;
   justify-items: center;
   padding: 0.1em;
   margin: 0.1em;
-  max-height: 27em;
+  max-height: 8.4em;
+  z-index: 2;
 }
 
 .article-img {
-  border-radius: 4em;
+  border-radius: 2em;
   text-align: center;
 }
 .article-card-img {
-  border-radius: 4em;
+  border-radius: 1.4em;
   opacity: 55%;
   text-align: center;
   max-width: 100%;
-
 }
 
 .article-title-card {
   background-color: white;
   box-sizing: border-box;
   border-radius: 2em;
+  max-width: 80%;
+  height: 0.2em;
+  width: 10em;
   padding: 1.7em;
-  position: relative;
-  transform: translateY(-165%);
+  position: absolute;
+  transform: translateY(-175%) translateX(15%);
 }
 
 .container-text {
   text-align: center;
-font-size: 0.1em;
+  line-height: 3em;
+  font-size: 0.4em;
+  transform: translateY(-60%);
 }
-
 
 a {
   font-weight: 700;
@@ -161,6 +165,7 @@ button:focus-visible {
   inset: 0;
   height: 3em;
   padding: 0.5em;
+  z-index: 3;
 }
 
 .dropdown {
